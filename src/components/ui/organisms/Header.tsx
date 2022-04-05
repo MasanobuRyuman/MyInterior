@@ -16,7 +16,7 @@ export const Header = ()=>{
           m    : "auto",
         }}>
           <Logo sx={{
-            mt: 0,
+            ml : 1
           }}>MyInterior</Logo>
           <Button sx={{
             m : "0 0 0 auto",
