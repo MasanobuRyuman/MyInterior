@@ -11,9 +11,7 @@ interface IDefaultBox {
   Height: number
 }
 export const DefaultBox = styled(Box)(({ Width, Height }: IDefaultBox) => ({
-  backgroundColor: '#FFFFFF',
-  border: 'solid',
-  borderColor: '#63daff',
+  backgroundColor: '#fcfafc',
   borderRadius: 10,
   borderWidth: 10,
   height: Height,
