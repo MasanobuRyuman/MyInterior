@@ -1,9 +1,10 @@
-import {Header} from './../organisms'
+import { Header, ContentHeading } from './../organisms'
 
-export const TopPageTemplate = () =>{
+export const TopPageTemplate = () => {
   return (
     <div>
       <Header />
+      <ContentHeading />
     </div>
   )
 }

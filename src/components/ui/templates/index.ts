@@ -1,2 +1,2 @@
 // @flow
-export { TopPageTemplate } from "./TopPageTemplate";
+export { TopPageTemplate } from './TopPageTemplate'

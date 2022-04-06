@@ -1,5 +1,5 @@
-import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
+import { createTheme } from '@mui/material/styles'
+import { red } from '@mui/material/colors'
 
 const theme = createTheme({
   breakpoints: {
@@ -13,10 +13,10 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#666666",
+      main: '#666666',
     },
     secondary: {
-      main: "#19857b",
+      main: '#19857b',
     },
     error: {
       main: red.A400,
@@ -24,7 +24,10 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: 'Open Sans',
+    h1: {
+      color: '#666666',
+    },
   },
-});
+})
 
-export default theme;
+export default theme
