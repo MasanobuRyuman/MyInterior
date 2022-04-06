@@ -1,10 +1,9 @@
-import {Box} from '@mui/material'
-import {TopPageTemplate} from './../templates'
+import { TopPageTemplate } from './../templates'
 
-export const TopPage = ()=>{
-  return(
+export const TopPage = () => {
+  return (
     <div>
-      <TopPageTemplate/>
+      <TopPageTemplate />
     </div>
   )
 }
