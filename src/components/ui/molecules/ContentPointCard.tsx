@@ -8,11 +8,10 @@ interface IContentPointCard {
   Text: string
 }
 
-// eslint-disable-next-line react/prop-types
-export const ContentPointCard: React.VFC<IContentPointCard> = ({
+export const ContentPointCard: React.VFC<IContentPointCard>= ({
   TitleText,
   Text,
-}) => {
+}:IContentPointCard) => {
   return (
     <DefaultBox
       Height={300}
