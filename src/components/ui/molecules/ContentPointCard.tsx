@@ -28,7 +28,7 @@ export const ContentPointCard: React.VFC<IContentPointCard>= ({
       >
         <H3
           sx={{
-            mt: 3,
+            pt: 2,
             textAlign: 'center',
           }}
         >
