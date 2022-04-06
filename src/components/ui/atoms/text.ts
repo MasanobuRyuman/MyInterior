@@ -14,3 +14,11 @@ export const CatchCopyText = styled(Typography)({
 export const H2 = styled(Typography)({
   fontSize: 40,
 })
+
+export const H3 = styled(Typography)({
+  fontSize: 30,
+})
+
+export const H4 = styled(Typography)({
+  fontSize: 20,
+})
