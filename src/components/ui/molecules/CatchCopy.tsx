@@ -34,7 +34,7 @@ export const CatchCopy: React.VFC = () => {
             >
               WebAR
             </CatchCopyText>
-            <CatchCopyText sx={{}}>✖️</CatchCopyText>
+            <CatchCopyText>✖️</CatchCopyText>
             <CatchCopyText
               sx={{
                 fontWeight: 'bold',
