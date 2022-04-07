@@ -1,6 +1,8 @@
+import React from 'react'
+
 import { TopPageTemplate } from './../templates'
 
-export const TopPage = () => {
+export const TopPage: React.VFC = () => {
   return (
     <div>
       <TopPageTemplate />
