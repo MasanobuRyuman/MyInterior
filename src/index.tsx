@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { ThemeProvider } from '@mui/material/styles'
 
 import App from './App'
+import ObjectDataProvider from './context/ObjectDataContext'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 import theme from './theme'
@@ -10,7 +11,9 @@ import theme from './theme'
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <ObjectDataProvider>
+        <App />
+      </ObjectDataProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')

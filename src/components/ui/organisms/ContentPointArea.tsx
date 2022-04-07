@@ -12,10 +12,12 @@ export const ContentPointArea: React.VFC = () => {
           width: '100%',
         }}
       >
-        <Box sx={{
-          width: "85%",
-          m : "auto",
-        }}>
+        <Box
+          sx={{
+            width: '85%',
+            m: 'auto',
+          }}
+        >
           <Grid
             container
             columns={{ xs: 4, sm: 4, md: 12 }}

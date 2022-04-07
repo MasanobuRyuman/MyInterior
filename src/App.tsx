@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import { TopPage,ContentPage } from './components/ui/pages'
+import { ARPage, TopPage, ContentPage } from './components/ui/pages'
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<TopPage />} />
           <Route path="/content" element={<ContentPage />} />
+          <Route path="/AR" element={<ARPage />} />
         </Routes>
       </BrowserRouter>
     </div>

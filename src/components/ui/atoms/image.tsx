@@ -13,7 +13,7 @@ export const TopPageContentImage: React.VFC = () => {
   )
 }
 
-export const TopPageSofa: React.FunctionComponent = () => {
+export const TopPageSofa: React.VFC = () => {
   return (
     <Fade timeout={3000} in={true}>
       <Box

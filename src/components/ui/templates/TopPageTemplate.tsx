@@ -1,11 +1,13 @@
+import React from 'react'
+
 import {
-  Header,
   ContentDescription,
   ContentHeading,
   ContentPointArea,
+  Header,
 } from './../organisms'
 
-export const TopPageTemplate = () => {
+export const TopPageTemplate: React.VFC = () => {
   return (
     <div>
       <Header />

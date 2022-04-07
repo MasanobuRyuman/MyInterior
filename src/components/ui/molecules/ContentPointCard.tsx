@@ -8,10 +8,10 @@ interface IContentPointCard {
   Text: string
 }
 
-export const ContentPointCard: React.VFC<IContentPointCard>= ({
+export const ContentPointCard: React.VFC<IContentPointCard> = ({
   TitleText,
   Text,
-}:IContentPointCard) => {
+}: IContentPointCard) => {
   return (
     <DefaultBox
       Height={300}

@@ -1,2 +1,3 @@
+export { ARPageTemplate } from './ARPageTemplate'
+export { ContentPageTemplate } from './ContentPageTemplate'
 export { TopPageTemplate } from './TopPageTemplate'
-export { ContentPageTemplate} from './ContentPageTemplate'

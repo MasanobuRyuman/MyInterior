@@ -1,11 +1,13 @@
 import React from 'react'
 
-import {ContentPageHeader} from './../organisms'
+import { ContentPageHeader } from '../organisms'
+import { InputFileArea } from '../organisms'
 
-export const ContentPageTemplate = () =>{
-  return(
+export const ContentPageTemplate: React.VFC = () => {
+  return (
     <div>
-      <ContentPageHeader/>
+      <ContentPageHeader />
+      <InputFileArea />
     </div>
   )
 }

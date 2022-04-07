@@ -1,8 +1,9 @@
 import { Box } from '@mui/material'
+import React from 'react'
 
-import { CatchCopyText, H2 } from './../atoms'
+import { CatchCopyText } from './../atoms'
 
-export const CatchCopy = () => {
+export const CatchCopy: React.VFC = () => {
   return (
     <div>
       <Box
