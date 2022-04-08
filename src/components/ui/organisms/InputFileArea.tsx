@@ -4,7 +4,7 @@ import { Box } from '@mui/material'
 import React, { useContext, useState } from 'react'
 
 import { ObjectDataContext } from './../../../context/ObjectDataContext'
-import { FileInput, H4 } from '../atoms'
+import { FileInput, H5 } from '../atoms'
 
 export const InputFileArea: React.VFC = () => {
   const { setObjectURL, setMaterialURL } = useContext(ObjectDataContext)
@@ -26,46 +26,90 @@ export const InputFileArea: React.VFC = () => {
     <div>
       <Box
         sx={{
-          display: 'flex',
+          display: {
+            sm: 'flex',
+            xs: 'inline',
+          },
         }}
       >
-        <H4>Objectファイル(.obj)</H4>
+        <H5
+          sx={{
+            mt: {
+              sm: 0.5,
+            },
+          }}
+        >
+          Objectファイル(.obj)
+        </H5>
         <Box
           sx={{
-            ml: 3,
+            display: 'flex',
           }}
         >
-          <FileInput OnChange={setObject} />
+          <Box
+            sx={{
+              ml: {
+                sm: 3,
+                xs: 0,
+              },
+            }}
+          >
+            <FileInput OnChange={setObject} />
+          </Box>
+          <H5
+            sx={{
+              mt: 0.5,
+              ml: 1,
+            }}
+          >
+            {objectFileStatus}
+          </H5>
         </Box>
-        <H4
-          sx={{
-            ml: 1,
-          }}
-        >
-          {objectFileStatus}
-        </H4>
       </Box>
       <Box
         sx={{
-          display: 'flex',
+          display: {
+            sm: 'flex',
+            xs: 'inline',
+          },
           mt: 2,
         }}
       >
-        <H4>Materialファイル(.obj)</H4>
+        <H5
+          sx={{
+            mt: {
+              sm: 0.5,
+            },
+          }}
+        >
+          Materialファイル(.mtl)
+        </H5>
         <Box
           sx={{
-            ml: 1.1,
+            display: 'flex',
           }}
         >
-          <FileInput OnChange={setMaterial} />
+          <Box
+            sx={{
+              ml: {
+                sm: 1.1,
+                xs: 0,
+              },
+            }}
+          >
+            <FileInput OnChange={setMaterial} />
+          </Box>
+          <H5
+            sx={{
+              mt: 0.5,
+              ml: {
+                sm: 1,
+              },
+            }}
+          >
+            {materialFileStatus}
+          </H5>
         </Box>
-        <H4
-          sx={{
-            ml: 1,
-          }}
-        >
-          {materialFileStatus}
-        </H4>
       </Box>
     </div>
   )
