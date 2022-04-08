@@ -5,6 +5,7 @@
 
 import { Box } from '@mui/material'
 import { useContext } from 'react'
+
 import { ObjectDataContext } from './../../../context/ObjectDataContext'
 
 export const AR = () => {
@@ -24,10 +25,12 @@ export const AR = () => {
             <a-asset-item id="mtl" src={MaterialURL}></a-asset-item>
           </a-assets>
           <a-marker preset="hiro">
-            <a-obj-model src="#cow" mtl="#mtl" scale=".5 .5 .5"></a-obj-model>
+            <a-obj-model src="#cow" mtl="#mtl" scale="5 5 5"></a-obj-model>
           </a-marker>
           <a-entity camera></a-entity>
         </a-scene>
+        <p>QRコードを写してください</p>
+        <a href="../content">移動</a>
       </Box>
     </Box>
   )

@@ -11,7 +11,7 @@ export const FileInput: React.VFC<IFileInput> = ({ OnChange }: IFileInput) => {
     <InputLabel
       sx={{
         border: 'solid',
-        width: 200,
+        width: 150,
         height: 30,
       }}
     >

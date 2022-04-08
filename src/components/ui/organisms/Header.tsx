@@ -2,7 +2,7 @@ import { Box } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { Button, HeaderBox, Logo } from './../atoms'
+import { HeaderButton, HeaderBox, Logo } from './../atoms'
 
 export const Header: React.VFC = () => {
   return (
@@ -33,7 +33,7 @@ export const Header: React.VFC = () => {
             }}
           >
             <Link to="content">
-              <Button>Start</Button>
+              <HeaderButton>Start</HeaderButton>
             </Link>
           </Box>
         </Box>

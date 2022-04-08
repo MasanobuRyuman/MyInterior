@@ -23,10 +23,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Open Sans',
-    h1: {
-      color: '#666666',
-    },
+    fontFamily: 'Noto Sans JP, sans-serif',
   },
 })
 

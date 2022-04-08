@@ -22,3 +22,7 @@ export const H3 = styled(Typography)({
 export const H4 = styled(Typography)({
   fontSize: 20,
 })
+
+export const H5 = styled(Typography)({
+  fontSize: 15,
+})
