@@ -20,9 +20,10 @@ interface IDefaultButton {
 }
 
 export const DefaultButton = styled('button')(({ Width }: IDefaultButton) => ({
-  backgroundColor: '#C4C4C4',
-  borderColor: '#C4C4C4',
+  backgroundColor: '#FFEF6C',
+  borderColor: '#FFEF6C',
   borderRadius: 10,
+  color: '#666666',
   height: 40,
   width: Width,
   '&:hover': {

@@ -9,7 +9,7 @@ export const CatchCopy: React.VFC = () => {
       <Box
         sx={{
           position: 'absolute',
-          width: '55%',
+          width: '57%',
           left: 0,
           right: 0,
           top: '20%',

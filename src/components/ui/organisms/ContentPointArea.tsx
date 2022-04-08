@@ -32,7 +32,7 @@ export const ContentPointArea: React.VFC = () => {
                 <ContentPointCard
                   TitleText={'Point 1'}
                   Text={
-                    'Web上でARをみられるのでヘッドセットの準備などは入りません。'
+                    'Web上でARを見ることができるので、ヘッドセットなどの準備は必要ありません。'
                   }
                 />
               </Box>
@@ -46,7 +46,7 @@ export const ContentPointArea: React.VFC = () => {
                 <ContentPointCard
                   TitleText={'Point 2'}
                   Text={
-                    'Web上で配布されている家具や自分で作った家具を表示できます。'
+                    'Web上で配布されている3Dデータや自分で作った3Dデータを表示できます。'
                   }
                 />
               </Box>

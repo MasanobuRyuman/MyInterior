@@ -8,7 +8,7 @@ import {
 } from '@mui/material'
 import React, { useState } from 'react'
 
-import { DefaultButton} from './../atoms'
+import { DefaultButton } from './../atoms'
 
 export const MarkerDownload: React.VFC = () => {
   const [open, setOpen] = useState(false)
