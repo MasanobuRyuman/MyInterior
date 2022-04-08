@@ -125,16 +125,7 @@ export const AR = () => {
           </a-marker>
           <a-entity camera></a-entity>
         </a-scene>
-        <H3
-          sx={{
-            color: 'red',
-            position: 'absolute',
-            top: 5,
-            left: '40%',
-          }}
-        >
-          マーカーを表示してください
-        </H3>
+        
         <Box
           sx={{
             position: 'absolute',
