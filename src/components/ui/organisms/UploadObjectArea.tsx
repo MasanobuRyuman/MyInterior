@@ -21,8 +21,6 @@ export const UploadObjectArea: React.VFC = () => {
       >
         <Box
           sx={{
-            backgroundColor: '#FFEF6C',
-            border: 'solid',
             width: 260,
             height: 46,
             mt: -6.3,
