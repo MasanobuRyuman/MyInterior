@@ -62,7 +62,7 @@ export const UploadObjectArea: React.VFC = () => {
             mt: 5,
           }}
         >
-          <Link to="../AR">
+          <Link to='../AR'>
             <DefaultButton Width={100}>AR</DefaultButton>
           </Link>
         </Box>

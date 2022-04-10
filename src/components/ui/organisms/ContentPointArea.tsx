@@ -21,7 +21,7 @@ export const ContentPointArea: React.VFC = () => {
           <Grid
             container
             columns={{ xs: 4, sm: 4, md: 12 }}
-            justifyContent="center"
+            justifyContent='center'
           >
             <Grid item xs={4} sm={4} md={4}>
               <Box
