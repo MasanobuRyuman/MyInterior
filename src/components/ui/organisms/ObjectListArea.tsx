@@ -23,32 +23,30 @@ const ObjectImageList = (props: IObjectImageList) => {
     setMaterialURL(`Objects/${item}/${object}/${object}.mtl`)
   }
   return (
-    <Grid container columns={{ xs: 4, sm: 4, md: 12 }} justifyContent="center">
+    <Grid container columns={{ xs: 4, sm: 8, md: 12 }} justifyContent="center">
       {props.itemList.map((value, index) => {
         return (
-          <div key={index}>
-            <Grid item xs={4} sm={4} md={4}>
-              <Box
-                sx={{
-                  ml: 2,
-                  mr: 2,
-                }}
-              >
-                <Link to="../AR" onClick={() => SetObject(props.item, value)}>
-                  <Box
-                    src={`Objects/${props.item}/${value}/${value}.png`}
-                    component="img"
-                    sx={{
-                      border: 'solid',
-                      borderColor: '#666666',
-                      width: 200,
-                      height: 200,
-                    }}
-                  />
-                </Link>
-              </Box>
-            </Grid>
-          </div>
+          <Grid item xs={4} sm={4} md={4} key={index}>
+            <Box
+              sx={{
+                ml: 2,
+                mr: 2,
+              }}
+            >
+              <Link to="../AR" onClick={() => SetObject(props.item, value)}>
+                <Box
+                  src={`Objects/${props.item}/${value}/${value}.png`}
+                  component="img"
+                  sx={{
+                    border: 'solid',
+                    borderColor: '#666666',
+                    width: 200,
+                    height: 200,
+                  }}
+                />
+              </Link>
+            </Box>
+          </Grid>
         )
       })}
     </Grid>
