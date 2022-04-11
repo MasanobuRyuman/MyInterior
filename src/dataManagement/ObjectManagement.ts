@@ -1,5 +1,5 @@
 export const ObjectInfo = {
   chair: ['classicChair', 'gamingChair'],
-  sofa: [],
-  desk: [],
+  sofa: ['blackSquareSofa','blueSquareSofa','redSquareSofa'],
+  desk: ['woodDiningTable'],
 }
