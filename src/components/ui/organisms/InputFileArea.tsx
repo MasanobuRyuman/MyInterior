@@ -49,7 +49,7 @@ export const InputFileArea: React.VFC = () => {
           <Box
             sx={{
               ml: {
-                sm: 3,
+                sm: 2.6,
                 xs: 0,
               },
             }}
