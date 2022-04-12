@@ -1,10 +1,16 @@
-import { Box, Fade } from '@mui/material'
+import { Box } from '@mui/material'
 import React from 'react'
 
-export const TopPageContentImage: React.VFC = () => {
+interface IContentImage {
+  ImageURL: string
+}
+
+export const ContentImage: React.VFC<IContentImage> = ({
+  ImageURL,
+}: IContentImage) => {
   return (
     <Box
-      src="TopPage/TopPageUpSide.png"
+      src={ImageURL}
       component="img"
       sx={{
         width: '100%',
@@ -13,22 +19,57 @@ export const TopPageContentImage: React.VFC = () => {
   )
 }
 
-export const TopPageSofa: React.VFC = () => {
+interface IDefaultImage {
+  ImageURL: string
+  Border: string
+  Width: number | string
+  Height: number | string
+}
+
+export const DefaultImage: React.VFC<IDefaultImage> = ({
+  ImageURL,
+  Border,
+  Width,
+  Height,
+}: IDefaultImage) => {
   return (
-    <Fade timeout={3000} in={true}>
-      <Box
-        src="TopPage/TopPageSofa.png"
-        component="img"
-        sx={{
-          position: 'absolute',
-          left: 0,
-          right: 0,
-          top: '40%',
-          m: 'auto',
-          width: '40%',
-          height: '60%',
-        }}
-      />
-    </Fade>
+    <Box
+      src={ImageURL}
+      component="img"
+      sx={{
+        border: Border,
+        borderColor : "#666666",
+        width: Width,
+        height: Height,
+      }}
+    />
+  )
+}
+
+interface IAbsoluteCenterImage {
+  ImageURL: string
+  Width: number | string
+  Height: number | string
+}
+
+export const AbsoluteCenterImage: React.VFC<IAbsoluteCenterImage> = ({
+  ImageURL,
+  Width,
+  Height,
+}: IAbsoluteCenterImage) => {
+  return (
+    <Box
+      src={ImageURL}
+      component="img"
+      sx={{
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: '40%',
+        m: 'auto',
+        width: Width,
+        height: Height,
+      }}
+    />
   )
 }

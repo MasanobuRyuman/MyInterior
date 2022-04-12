@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 import { ObjectInfo } from '../../../dataManagement/ObjectManagement'
 import { ObjectDataContext } from './../../../context/ObjectDataContext'
+import { DefaultImage } from './../atoms'
 
 interface TabPanelProps {
   children?: React.ReactNode
@@ -29,20 +30,18 @@ const ObjectImageList = (props: IObjectImageList) => {
           <Grid item xs={4} sm={4} md={4} key={index}>
             <Box
               sx={{
-                ml: 2,
-                mr: 2,
+                width: 200,
+                height: 200,
+                m: 'auto',
+                mt: 1,
               }}
             >
               <Link to="../AR" onClick={() => SetObject(props.item, value)}>
-                <Box
-                  src={`Objects/${props.item}/${value}/${value}.png`}
-                  component="img"
-                  sx={{
-                    border: 'solid',
-                    borderColor: '#666666',
-                    width: 200,
-                    height: 200,
-                  }}
+                <DefaultImage
+                  ImageURL={`Objects/${props.item}/${value}/${value}.png`}
+                  Width={200}
+                  Height={200}
+                  Border="solid"
                 />
               </Link>
             </Box>
