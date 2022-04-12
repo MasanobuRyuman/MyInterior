@@ -35,7 +35,7 @@ export const ContentPageTemplate: React.VFC = () => {
             ml: 2,
           }}
         >
-          <MarkerDownload />
+          <MarkerDownload ImageURL="ARMarker/marker.png" />
         </Box>
       </Box>
 

@@ -168,21 +168,21 @@ export const AR = () => {
   return (
     <Box>
       <Box
-        id='a-frame'
+        id="a-frame"
         sx={{
           width: 1400,
           height: 1400,
         }}
       >
-        <a-scene embedded arjs='debugUIEnabled:false;'>
+        <a-scene embedded arjs="debugUIEnabled:false;">
           <a-assets>
-            <a-asset-item id='cow' src={ObjectURL}></a-asset-item>
-            <a-asset-item id='mtl' src={MaterialURL}></a-asset-item>
+            <a-asset-item id="cow" src={ObjectURL}></a-asset-item>
+            <a-asset-item id="mtl" src={MaterialURL}></a-asset-item>
           </a-assets>
-          <a-marker preset='hiro'>
+          <a-marker preset="hiro">
             <a-obj-model
-              src='#cow'
-              mtl='#mtl'
+              src="#cow"
+              mtl="#mtl"
               scale={ObjectSizeData}
               position={ObjectPositionData}
               rotation={vectorData}
@@ -198,7 +198,7 @@ export const AR = () => {
             top: 30,
           }}
         >
-          <a href='../content'>
+          <a href="../content">
             <DefaultButton>戻る</DefaultButton>
           </a>
         </Box>

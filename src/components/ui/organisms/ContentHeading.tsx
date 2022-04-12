@@ -1,7 +1,7 @@
-import { Box } from '@mui/material'
+import { Box, Fade } from '@mui/material'
 import React from 'react'
 
-import { TopPageContentImage, TopPageSofa } from './../atoms'
+import { AbsoluteCenterImage, ContentImage } from './../atoms'
 import { CatchCopy } from './../molecules'
 
 export const ContentHeading: React.VFC = () => {
@@ -12,9 +12,17 @@ export const ContentHeading: React.VFC = () => {
           position: 'relative',
         }}
       >
-        <TopPageContentImage />
+        <ContentImage ImageURL="TopPage/TopPageUpSide.png" />
         <CatchCopy />
-        <TopPageSofa />
+        <Fade timeout={3000} in={true}>
+          <Box>
+            <AbsoluteCenterImage
+              ImageURL="TopPage/TopPageSofa.png"
+              Width="40%"
+              Height="60%"
+            />
+          </Box>
+        </Fade>
       </Box>
     </div>
   )

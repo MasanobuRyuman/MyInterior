@@ -10,7 +10,13 @@ import React, { useState } from 'react'
 
 import { DefaultButton } from './../atoms'
 
-export const MarkerDownload: React.VFC = () => {
+interface IMarkerDownload {
+  ImageURL: string
+}
+
+export const MarkerDownload: React.VFC<IMarkerDownload> = (
+  props: IMarkerDownload
+) => {
   const [open, setOpen] = useState(false)
   const handleClickOpen = () => {
     setOpen(true)
@@ -33,7 +39,7 @@ export const MarkerDownload: React.VFC = () => {
         <DialogTitle id="alert-dialog-title">{'ARマーカー'}</DialogTitle>
         <DialogContent>
           <Box
-            src="ARMarker/marker.png"
+            src={props.ImageURL}
             component="img"
             sx={{
               height: 400,
@@ -44,7 +50,7 @@ export const MarkerDownload: React.VFC = () => {
           />
         </DialogContent>
         <DialogActions>
-          <a href="ARMarker/marker.pdf" download>
+          <a href={props.ImageURL} download>
             ダウンロード
           </a>
           <Button onClick={handleClose} autoFocus>
