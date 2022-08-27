@@ -1,6 +1,6 @@
 # MyInterior
 
-3Dデータや家具を AR で表示して自分の部屋にあった家具を見つけることができます。
+3Dデータや家具を AR で表示することができるサービスです。
 
 https://my-interior.vercel.app/
 
